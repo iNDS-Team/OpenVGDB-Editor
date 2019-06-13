@@ -32,6 +32,7 @@ initSqlJs().then(function(SQL) {
   xhr.responseType = "arraybuffer";
 
   xhr.onload = e => {
+    document.getElementById("overlay").style.display = "none";
     var uInt8Array = new Uint8Array(xhr.response);
     var db = new SQL.Database(uInt8Array);
     var contents = db.exec("SELECT romID, releaseTitleName, TEMPregionLocalizedName FROM RELEASES");

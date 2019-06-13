@@ -1,0 +1,130 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+body {
+  text-align: center;
+  background-color: #08aeea;
+  background-image: linear-gradient( 68.3deg,  rgba(23,41,77,1) 6.3%, rgba(243,113,154,1) 90.9% );
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+h1, h2 {
+  text-shadow: 2px 2px slategray;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#wrapstarted {
+  margin-top: 100px;
+}
+
+#started {
+  text-decoration: none;
+  padding: 15px;
+  border: 1px solid slategray;
+  border-radius: 15px;
+  color: black;
+  background: white;
+}
+
+#started:hover {
+  box-shadow:  2px 2px slategray inset;
+}
+
+input[type='text'] {
+  font-size: 2em;
+  border-radius: 15px;
+  padding: 10px;
+  outline: none;
+}
+
+.badbanner {
+  width: 85%;
+  padding: 15px;
+  background-color: red;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.goodbanner {
+  width: 85%;
+  padding: 15px;
+  background-color: lightgreen;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.searchitem {
+  margin: 15px;
+}
+
+.searchitem > a[href] {
+  text-decoration: none;
+  background: white;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#drop-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 15px;
+  margin: 25px;
+  border-radius: 15px;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
